@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--dark-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+:root {
+  font-size: 1rem;
+  --platinum: #dcdcdd; /* Platinum */
+  --engineering-orange: #b80c09; /* Engineering Orange */
+  --outer-space: #46494c; /* Outer Space */
+  --gunmetal: #232c30; /* Gunmetal */
+  --rich-black: #000e14; /* Rich Black */
+  --space-blue: #002433; /* Space Blue */
+  --prussian-blue: #003952; /* Prussian Blue */
+  --cosmic-latte: #ccf5ac; /* Cosmic Latte */
+  --white-smoke: #f5f5f5; /* White Smoke */
+
+  --dark-color: var(--rich-black);
+  --light-color: var(--white-smoke);
+}
+
+
