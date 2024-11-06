@@ -50,7 +50,6 @@ const Contact = () => {
 	const styles = {
 		section: {
 			padding: "2rem",
-			backgroundColor: "var(--light-gray)",
 			borderRadius: "5px",
 			boxShadow: "0 0 10px 0 rgba(0, 0, 0, 0.2)",
 			maxWidth: "600px",
