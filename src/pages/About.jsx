@@ -39,6 +39,7 @@ const About = () => {
   
   return (
     <>
+      <h1>About Me</h1>
       <div style={styles.container}>
         <img style={styles.photo} src={photo} alt="Luke Flynn headshot" />
         <h1 style={styles.h1}>Luke Flynn</h1>

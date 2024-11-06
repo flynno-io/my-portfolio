@@ -55,7 +55,12 @@ const Contact = () => {
 			maxWidth: "600px",
 			minWidth: "300px",
 		},
-		h1: {
+    h1: {
+      fontSize: '2rem',
+      textAlign: 'center',
+      margin: '1rem 0',
+    },
+		h2: {
 			fontSize: "2rem",
 			textAlign: "center",
 			color: "var(--iris-blue)",
@@ -80,6 +85,7 @@ const Contact = () => {
 			height: "100px",
 			padding: ".5rem",
       fontSize: "1rem",
+      border: "1px solid var(--iris-blue)",
 		},
 		button: {
 			backgroundColor: "var(--iris-blue)",
@@ -103,32 +109,35 @@ const Contact = () => {
 	}
 
 	return (
-		<section style={styles.section}>
-			<h1 style={styles.h1}>{`Let's talk`}</h1>
-			<form style={styles.form}>
-				<label style={styles.label} htmlFor="name">
-					Name
-				</label>
-				<input style={styles.input} type="text" id="name" name="name" value={formData.name} onChange={handleChange} onBlur={handleBlur} />
-        <span style={ nameError ? styles.error : {} }>{nameError}</span>
+    <>
+      <h1 style={styles.h1}>Contact Me</h1>
+      <section style={styles.section}>
+        <h2 style={styles.h2}>{`Let's talk`}</h2>
+        <form style={styles.form}>
+          <label style={styles.label} htmlFor="name">
+            Name
+          </label>
+          <input style={styles.input} type="text" id="name" name="name" value={formData.name} onChange={handleChange} onBlur={handleBlur} />
+          <span style={ nameError ? styles.error : {} }>{nameError}</span>
 
-				<label style={styles.label} htmlFor="email">
-					Email
-				</label>
-				<input style={styles.input} type="email" id="email" name="email" value={formData.email} onChange={handleChange} onBlur={handleBlur} />
-        <span style={ emailError ? styles.error : {} }>{emailError}</span>
+          <label style={styles.label} htmlFor="email">
+            Email
+          </label>
+          <input style={styles.input} type="email" id="email" name="email" value={formData.email} onChange={handleChange} onBlur={handleBlur} />
+          <span style={ emailError ? styles.error : {} }>{emailError}</span>
 
-				<label style={styles.label} htmlFor="message">
-					Message
-				</label>
-				<textarea style={styles.message} id="message" name="message" value={formData.message} onChange={handleChange} onBlur={handleBlur} />
-        <span style={ messageError ? styles.error : {} }>{messageError}</span>
+          <label style={styles.label} htmlFor="message">
+            Message
+          </label>
+          <textarea style={styles.message} id="message" name="message" value={formData.message} onChange={handleChange} onBlur={handleBlur} />
+          <span style={ messageError ? styles.error : {} }>{messageError}</span>
 
-				<button style={ isDisabled || nameError || emailError || messageError ? {...styles.button, ...styles.disabled } : styles.button } type="submit">
-					Send
-				</button>
-			</form>
-		</section>
+          <button style={ isDisabled || nameError || emailError || messageError ? {...styles.button, ...styles.disabled } : styles.button } type="submit">
+            Send
+          </button>
+        </form>
+      </section>
+    </>
 	)
 }
 

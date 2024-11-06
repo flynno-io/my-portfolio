@@ -28,9 +28,12 @@ const Portfolio = () => {
 	))
 
 	return (
-		<section style={styles.section}>
-      {projects}
-		</section>
+    <>
+      <h1 style={styles.h1}>Portfolio</h1>
+      <section style={styles.section}>
+        {projects}
+      </section>
+    </>
 	)
 }
 
