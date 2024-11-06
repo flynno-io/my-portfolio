@@ -17,6 +17,7 @@ const Project = ({ title, imageURL, deployedLink, repoLink }) => {
       width: "100%",
       borderRadius: "5px",
       marginBottom: "1rem",
+      border: "1px solid var(--light-gray)"
     },
 		h2: {
 			fontSize: "2rem",

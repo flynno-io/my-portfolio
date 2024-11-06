@@ -1,40 +1,33 @@
+import weatherSearch from "../images/weather-search.png"
+import polishedCakes from "../images/polished-cakes.png"
+import westernWasteland from "../images/western-wasteland.png"
+import grabATable from "../images/grab-a-table.png"
+
 const projects = [
   {
-    title: "Project 1",
-    imageURL: "https://via.placeholder.com/500",
-    deployedLink: "https://www.google.com",
-    repoLink: "https://www.github.com",
+    title: "Weather Search",
+    imageURL: weatherSearch,
+    deployedLink: "https://weather-search-nbd8.onrender.com/",
+    repoLink: "https://github.com/flynno-io/weather-search",
   },
   {
-    title: "Project 2",
-    imageURL: "https://via.placeholder.com/500",
-    deployedLink: "https://www.google.com",
-    repoLink: "https://www.github.com",
+    title: "Polished Cakes",
+    imageURL: polishedCakes,
+    deployedLink: "https://polishedcakes.com/",
+    repoLink: "https://github.com/flynno-io/polished-cakes",
   },
   {
-    title: "Project 3",
-    imageURL: "https://via.placeholder.com/500",
-    deployedLink: "https://www.google.com",
-    repoLink: "https://www.github.com",
+    title: "Western Wasteland",
+    imageURL: westernWasteland,
+    deployedLink: "http://www.fictition.com/home",
+    repoLink: "https://github.com/flynno-io/western_wasteland",
   },
   {
-    title: "Project 4",
-    imageURL: "https://via.placeholder.com/500",
-    deployedLink: "https://www.google.com",
-    repoLink: "https://www.github.com",
+    title: "Grab a Table",
+    imageURL: grabATable,
+    deployedLink: "https://flynno-io.github.io/grab-a-table/#/home",
+    repoLink: "https://github.com/flynno-io/grab-a-table",
   },
-  {
-    title: "Project 5",
-    imageURL: "https://via.placeholder.com/500",
-    deployedLink: "https://www.google.com",
-    repoLink: "https://www.github.com",
-  },
-  {
-    title: "Project 6",
-    imageURL: "https://via.placeholder.com/500",
-    deployedLink: "https://www.google.com",
-    repoLink: "https://www.github.com",
-  }
 ]
 
 export default projects

@@ -12,6 +12,7 @@
   /* Website Color Scheme */
   --dark-color: var(--rich-black);
   --light-color: var(--white-smoke);
+  --light-gray: var(--cadet-gray);
   --primary-color: var(--iris-blue);
   --secondary-color: var(--space-cadet);
   --tertiary-color: var(--cadet-gray);
