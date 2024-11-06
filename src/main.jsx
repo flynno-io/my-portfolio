@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import './index.css'
 
 import App from './App';
@@ -18,7 +18,11 @@ const router = createBrowserRouter([
     errorElement: <Error />,
     children: [
       {
-        index: true,
+        path: '/',
+        element: <Navigate to="/about" replace={true} />,
+      },
+      {
+        path: '/home',
         element: <Home />,
       },
       {

@@ -47,8 +47,8 @@ const Nav = () => {
 			<ul style={styles.ul}>
 				<li style={styles.li}>
 					<Link
-						to="/"
-						style={currentPage === "/" ? styles.activeNavLink : styles.navLink}
+						to="/home"
+						style={currentPage === "/home" ? styles.activeNavLink : styles.navLink}
 					>
 						Home
 					</Link>

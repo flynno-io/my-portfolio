@@ -21,7 +21,7 @@ const Footer = () => {
     },
     copyright: {
       marginLeft: 'auto',
-      fontSize: "0.75rem",
+      fontSize: "0.75rem", 
     }
   }
 
