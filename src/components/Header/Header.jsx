@@ -19,7 +19,7 @@ const Header = () => {
 
 	return (
 		<header style={styles.header}>
-			<div style={styles.h1}>flynno.io</div>
+			<div style={styles.h1}>Luke Flynn</div>
 			<Nav />
 		</header>
 	)
