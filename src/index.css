@@ -18,19 +18,6 @@
   --tertiary-color: var(--cadet-gray);
   --accent-color: var(--crayola-pink);
 
-  /* Font Styles */
-  --font-size-sm: 1.2rem;
-  --font-size-md: 1.6rem;
-  --font-size-lg: 2.4rem;
-  --font-size-xl: 3.6rem;
-  --font-size-xxl: 4.8rem;
-  --font-size-xxxl: 6.4rem;
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
-  --font-weight-black: 900;
-
   --title-font: "Oooh Baby", cursive;
   --body-font: "Poppins", sans-serif;
 }
