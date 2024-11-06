@@ -34,7 +34,7 @@ const Resume = () => {
   return (
     <section style={styles.section}>
       <h1>Resume</h1>
-      <p>Download and review my resume <a style={styles.link} href="#">here</a></p>
+      <p>Download and review my resume <a style={styles.link} href="/resume-luke-flynn.pdf" download>here</a></p>
       <br/>
       <h2>Front-End Proficiencies</h2>
       <ul style={styles.ul}>
