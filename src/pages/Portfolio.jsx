@@ -1,45 +1,37 @@
 import Project from "../components/Project/Project"
+import projectData from "../assets/data/projects"
 
 const Portfolio = () => {
+	// component styles
+	const styles = {
+		section: {
+			margin: "2rem 3rem",
+			display: "flex",
+			flexDirection: "row",
+			alignItems: "center",
+      justifyContent: "center",
+      flexWrap: "wrap",
+		},
+		h1: {
+			fontSize: "2rem",
+		},
+	}
 
-  // component styles
-  const styles = {
-    section: {
-      margin: "2rem",
-      display: "flex",
-      flexDirection: "row",
-      alignItems: "center",
-    },
-    h1: {
-      fontSize: "2rem",
-    },
-  }
+	const projects = projectData.map((project, index) => (
+		<Project
+			key={index}
+			title={project.title}
+			imageURL={project.imageURL}
+			deployedLink={project.deployedLink}
+      repoLink={project.repoLink}
+		/>
+	))
 
-
-  const projects = [
-    {
-      title: "Project 1",
-      imageURL: "https://via.placeholder.com/600",
-    },
-    {
-      title: "Project 2",
-      imageURL: "https://via.placeholder.com/600",
-    },
-    {
-      title: "Project 3",
-      imageURL: "https://via.placeholder.com/600",
-    },
-  ].map((project, index) => (
-    <Project key={index} title={project.title} />
-  ))
-
-  return (
-    <section style={styles.section}>
-      <div>
-        {projects}
-      </div>
-    </section>
-  )
+	return (
+		<section style={styles.section}>
+      {projects}
+		</section>
+	)
 }
 
 export default Portfolio
