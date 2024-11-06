@@ -7,20 +7,19 @@ const Header = () => {
 			display: "flex",
 			padding: ".25rem",
 			justifyContent: "space-between",
-			background:
-				"linear-gradient(90deg, rgba(0, 57, 82,1) 10%, rgba(0,0,0,0) 100%)",
+      marginBottom: "1rem",
 		},
 		h1: {
 			fontSize: "2rem",
 			fontWeight: "800",
-			color: "var(--light-color)",
+			color: "var(--iris-blue)",
 			margin: "0 1rem",
 		},
 	}
 
 	return (
 		<header style={styles.header}>
-			<div style={styles.h1}>Flynno</div>
+			<div style={styles.h1}>flynno.io</div>
 			<Nav />
 		</header>
 	)

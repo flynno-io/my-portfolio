@@ -6,7 +6,8 @@ const Footer = () => {
       display: 'flex',
       justifyContent: 'left',
       height: '20vh',
-      backgroundColor: 'var(--platinum)',
+      backgroundColor: 'var(--tertiary-color)',
+      color: 'var(--light-color)',
       padding: '1rem',
     },
     ul: {
@@ -20,7 +21,7 @@ const Footer = () => {
     },
     copyright: {
       marginLeft: 'auto',
-      color: 'var(--black)',
+      fontSize: "0.75rem",
     }
   }
 
@@ -31,7 +32,7 @@ const Footer = () => {
         <li style={styles.li}>Github</li>
         <li style={styles.li}>Contact</li>
       </ul>
-      <div style={styles.copyright}>© 2024</div>
+      <div style={styles.copyright}>All Rights Reserved © 2024</div>
     </footer>
   )
 }

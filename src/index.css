@@ -1,30 +1,50 @@
+
+:root {
+  font-size: 1rem;
+  --red-cmyk: #e21219; /* Red (CMYK) */
+  --iris-blue: #5448c8; /* Iris Blue */
+  --space-cadet: #222359; /* Space Cadet */
+  --crayola-pink: #ff6978; /* Crayola Pink */
+  --rich-black: #000e14; /* Rich Black */
+  --cadet-gray: #a0a0a7; /* Cadet Gray */
+  --white-smoke: #f5f5f5; /* White Smoke */
+
+  /* Website Color Scheme */
+  --dark-color: var(--rich-black);
+  --light-color: var(--white-smoke);
+  --primary-color: var(--iris-blue);
+  --secondary-color: var(--space-cadet);
+  --tertiary-color: var(--cadet-gray);
+  --accent-color: var(--crayola-pink);
+
+  /* Font Styles */
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.6rem;
+  --font-size-lg: 2.4rem;
+  --font-size-xl: 3.6rem;
+  --font-size-xxl: 4.8rem;
+  --font-size-xxxl: 6.4rem;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --title-font: "Oooh Baby", cursive;
+  --body-font: "Poppins", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--body-font);
   color: var(--dark-color);
 }
 
 a {
   text-decoration: none;
   color: var(--dark-color);
-}
-
-:root {
-  font-size: 1rem;
-  --platinum: #dcdcdd; /* Platinum */
-  --engineering-orange: #b80c09; /* Engineering Orange */
-  --outer-space: #46494c; /* Outer Space */
-  --gunmetal: #232c30; /* Gunmetal */
-  --rich-black: #000e14; /* Rich Black */
-  --space-blue: #002433; /* Space Blue */
-  --prussian-blue: #003952; /* Prussian Blue */
-  --cosmic-latte: #ccf5ac; /* Cosmic Latte */
-  --white-smoke: #f5f5f5; /* White Smoke */
-
-  --dark-color: var(--rich-black);
-  --light-color: var(--white-smoke);
 }
 
 
